@@ -1,0 +1,8 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: covision
+
+#server:
+#  port: 8081
