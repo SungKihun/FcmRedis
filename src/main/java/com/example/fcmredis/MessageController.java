@@ -20,8 +20,8 @@ public class MessageController {
     @PostMapping("/send-message")
     public String sendMessage(@RequestBody String message) {
         ListOperations<String, String> listOps = redisTemplate.opsForList();
-        System.out.println("message: " + message);
-        listOps.leftPush("messageQueue", message);
+        System.out.println("MessageQueue: " + message);
+        listOps.leftPush("MessageQueue", message);
         return "Message sent to Redis Queue.";
     }
 }

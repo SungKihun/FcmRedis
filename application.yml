@@ -1,8 +1,9 @@
 spring:
   redis:
-    host: localhost
+    host: 192.168.12.14
     port: 6379
-    password: covision
+    password: EUMru@2020
+#    password: covision
 
 #server:
 #  port: 8081
